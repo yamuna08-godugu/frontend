@@ -23,7 +23,7 @@ Follow these steps to run the frontend locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/expense-tracker-frontend.git
+   https://github.com/yamuna08-godugu/frontend.git
 Navigate to the frontend directory:
 
 bash
