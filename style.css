@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2d3436;
+}
+
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 20px auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: fadeIn 1s ease-in-out;
+}
+
+input {
+  margin: 10px 0;
+  padding: 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  width: 47%;
+  font-size: 16px;
+  background-color: #f9fbfd;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+button {
+  margin: 10px 0;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.4s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#expense-list li {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+#expense-list li:hover {
+  transform: scale(1.02);
+}
+
+#expense-list button {
+  background: linear-gradient(135deg, #ff6a6a, #ff4e50);
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+#expense-list button:hover {
+  background: linear-gradient(135deg, #ff4e50, #ff6a6a);
+}
+
+/* Small fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
